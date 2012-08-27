@@ -1,0 +1,60 @@
+
+MiaoJian  
+13956995020
+eric.mjian@gmail.com              
+
+Objective
+To obtain a challenging position as a software developer, where my talents can be applied and my expertise can be expanded.
+
+Experience and skills Summary
+	4+ years software development experience and 2 years project management experience.
+	Knowledge of principles and techniques of NLP.
+	Hands-on experience of C/C++, Python, Delphi and C#.
+	Familiar with software development process and tools such as automation, testing.
+	Excellent in CET Band4 and Band6, C+ in CET Spoken English Test.
+
+Work Experience
+Suzhou Ruanxun Educational Technology Company (2010.7 每 2012.8)
+Position: Development Manager
+	Led a 5-people group to design and implement a client-server system for English test with innovations in user interaction.
+	Designed and implemented an automation essay scoring system, and based on this core system, designed a web application for college English teaching and learning.
+
+Anhui USTC iFlyTek Co., Ltd. (2008.7 每 2010.7)
+Position: Software Develop
+	Designed and implemented several Windows applications using C++, Delphi, C# based on voice cloud and speech evaluation..
+	Introduced testing automation to the group.
+
+Projects
+Automation Essay Scoring System (2010.12 每 Present)
+Project Summary: An automation essay scoring system, and a web application for college English teaching and learning based on it.
+	Planning the project, and coordinating teachers and developers involved in.
+	Collected student essays and other datum, built a corpus for research and software development.
+	Designed the automation essay scoring framework, and the architecture of the web application.
+	Built the essay scoring model, implemented the automation essay scoring engine.
+	Doing research on automation essay scoring, analyzing essays with techniques in NLP and other related fields.
+	Analyzing feather values of the essays to make out scoring indexes.
+	Improved the spelling checker＊s accuracy using bigram language model.
+	Improved the performance of the spelling checker by about 10 times.
+
+New Perspective English Test System (2010.7 每 2011.5)
+Project Summary: A robust, easy-to-use, user-friendly English test system, supporting 43 question types.
+	Designed the simple and friendly operation for students to finish the test tasks on computer, bringing kinds of facilities for students creatively.
+	Designed the architecture of the application, and data structures.
+	Implemented the data encryption and software protection with USB Key.
+
+YouTing Net Broadcast (2010.3 - 2010.6)
+Project Summary: A Windows application based on the iFlyTek Voice Cloud, providing news RSS and local file TTS reading.
+	Designed and implemented the interface for the communication between the application and the voice cloud.
+
+ChangYan English Learning Series (2009.10 每 2010.3)
+Project Summary: A series of software using speech evaluation technology to help students to learn English.
+	Designed and implemented configurable, extensible plugin modules.
+
+Nation Mandarin Test System (2009.2 每 2009.9)
+Project Summary: An automation test system based on speech evaluation technology for national mandarin test, used all over the country by millions of candidates every year.
+	As a major developer, designed and implemented the monitor (server side) component of the system.
+	Introduced testing automation to the group, improved the efficiency of development and testing.
+
+Education
+2005.9-2008.6 M.S., Computer Aided Education, University of Science and Technology of China
+2001.9-2005.6 B.S., Computer Science, University of Science and Technology of China
