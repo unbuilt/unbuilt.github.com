@@ -1,0 +1,26 @@
+<!DOCTYPEHTML>  
+<html>  
+<head>  
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no">  
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">  
+<title>Hello,world</title>  
+<style type="text/css">  
+html{height:100%}  
+body{height:100%;margin:0px;padding:0px}  
+#container{height:100%}  
+</style>  
+<script type="text/javascript"  
+src="http://webapi.amap.com/maps?v=1.2&key=35977b14cb5e3af2e1f40f297ee72891">  
+</script>  
+<script type="text/javascript">  
+function initialize(){  
+var position=new AMap.LngLat(116.404,39.915);//创建中心点坐标  
+var mapObj=new AMap.Map("container",{center:position});//创建地图实例  
+}  
+</script>  
+</head>  
+  
+<body onload="initialize()">  
+<divid="container"></div>  
+</body>  
+</html>  
