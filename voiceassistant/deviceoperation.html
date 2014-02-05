@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="./static/semantic/css/semantic.min.css"/>
+<link rel="stylesheet" href="./static/docs.css"/>
+<link href="./static/asset/prettify.css" rel="stylesheet">
+<link href="./static/toc/toc.css" rel="stylesheet">
+<link rel="stylesheet" href="./static/parm.css"/>
+<link rel="stylesheet" href="./static/asset/sons-of-obsidian.css"/>
+
+<title>辅助操作功能体验 - VoiceAssistant</title>
+</head>
+<body>
+
+
+
+<!-- Navbar
+================================================== -->
+<div class="navbar">
+  <div class="ui small secondary inverted borderless menu">
+    
+    <a class="active item" href="./index.html">Home</a>
+    
+  </div>
+</div>
+
+
+<div class="ui divided grid">
+    <div class="four wide column" id="side-bar">
+        <div id="toc" class="content"></div>
+    </div> 
+    
+    <div class="twelve wide column" id="markdown-content">
+    
+        
+
+        
+        <h1 id="title_1">辅助操作功能体验<a class="anchor" href="#title_1">&para;</a></h1>
+<p>辅助操作是语音助手最基本的功能。通常包括：</p>
+<ul>
+<li>设置提醒</li>
+<li>打开应用、打开网页</li>
+<li>拨打电话</li>
+<li>发送信息</li>
+<li>系统设定</li>
+<li>播报短信、来电</li>
+</ul>
+<p>虽然拨打电话是手机最重要的功能，但对于语音助手来说，设置提醒最能为用户提高效率，而且需要的信息最多，所以以下将以设置提醒为例体验各语音助手的辅助操作功能。</p>
+<h2 id="title_1-1">设置提醒<a class="anchor" href="#title_1-1">&para;</a></h2>
+<p>设置提醒是辅助操作中最常用的功能。语音助手极大的减少了用户设置提醒的操作，再也不需要用键盘输入时间、地点、事项，在不同的输入框之间切换，只要对语音助手说一句“明天上午九点提醒我开会”，它就会帮用户设置好一个提醒。</p>
+<p>设置提醒时通常有如下几种方式：</p>
+<ol>
+<li>用户直接说“明天九点提醒我去礼堂开会”</li>
+<li>用户说“帮我建个提醒”，然后助手询问具体的细节来完成上述提醒</li>
+</ol>
+<p>在第2种方式中，语音助手需要完成与用户的多次交互，获取到足够的信息。</p>
+<p>本文采用以下用例来使用语音助手尝试完成设置提醒的任务。</p>
+<ol>
+<li>明天九点提醒我去礼堂开会</li>
+<li>半个小时后提醒我买火车票</li>
+<li>帮我建个提醒</li>
+</ol>
+<table class="ui collapsing celled table segment">
+<tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
+</tr>
+<tr><td>Siri</td><td>A</td><td>A</td><td>B</td><td>Siri在最终创建提醒前会进行语音输入模式让用户进行确认，即使对于用例一和二，设置提醒也是一个多轮的交互过程。在用例三中Siri在交互过程中会询问用户需要提醒做什么，但是不会主动询问时间，需要用户主动说出修改时间来。另外，Siri还可以根据位置来提醒，设置用户离开或者到达某地时进行提醒。这对于出门记得带东西或者路过超市记得买东西都是非常有用的。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>灵犀、语点</td><td>A</td><td>A</td><td>D 不能进行多轮交互，直接以默认时间创建提醒或者给出用户使用指导</td><td>用户给出设置提醒的指令后，灵犀会自动建立好提醒，不需要用户确认，但会播报给用户。灵犀不支持多轮交互设置提醒。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>搜狗语音助手</td><td>A</td><td>A</td><td>D 不能进行多轮交互，尝试以默认时间创建提醒</td><td>搜狗语音助手在创建提醒前，也会提示用户进行确认，但是并不进行语音输入模式，需要用户点击按钮选择。搜狗语音助手也不支持多轮交互设置提醒。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>百度语音助手</td><td>B</td><td>A</td><td>D 显示搜索结果</td><td>百度语音助手在语音识别和提醒创建上相对上面三个语音助手略差，但是可以完成用例一和二。</td><td>B</td><td>B</td>
+</tr>
+<tr><td>云知声语音助手</td><td>A</td><td>A</td><td>D 显示用户指导</td><td>云知声语音助手在创建提醒前需要用户点击按钮确认，也不能支持多轮交互设置提醒，但是对于用例三会提示用户可能通过说出完整的提醒信息来创建提醒，给用户以指导。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>智能360</td><td>A</td><td>A</td><td>D 显示用户指导</td><td>智能360不支持多轮交到设置提醒。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>快说</td><td>A</td><td>A</td><td>D 显示随意内容</td><td>快说语音助手不支持多轮交互设置提醒。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>哦啦</td><td>A</td><td>A</td><td>A</td><td>哦啦会直接创建提醒而不需要用户确认，同时支持多轮交互设置提醒，并能主动询问事项的时间和内容。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>虫洞语音助手</td><td>A</td><td>D 显示购票网站</td><td>D 显示用户指导</td><td>虫洞语音助手不支持多轮交互设置提醒，且将用例二直接显示为购票网站内容，并没有理解用户的意图。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>出门问问</td><td>N/A</td><td>N/A</td><td>N/A</td><td>出门问问专注于出行，不支持此功能</td><td>N/A</td><td>N/A</td>
+</tr>
+
+</table>
+<p>从以上可以看出对于简单的设置提醒任务，几乎所有语音助手都可以顺利完成。只有Siri和快说语音助手支持多轮交互设置提醒。相信其他语音助手也会很快加入多轮交互的，毕竟绝大多数语音助手还是准确识别出了用户设置提醒的意图。</p>
+<p>不同语音助手完成任务的过程还是有区别的，有的会在设置提醒前请用户确认，有的是设置完成后显示出来供用户检查，还有的提供了用户关闭提醒的开关。其实语音助手设置好提醒后，用户还是会检查一下的；所以如果语音助手在设置提醒前让用户确认，是会让用户更轻松的，但是确认过程一定要简单，最好的方式就是直接打开语音输入，等待用户确认，形成一个多轮的语音交互来完成任务。</p>
+<p>在不能完成任务的情况下，大多数语音助手都会引导用户进行有效的输入。</p>
+<p>本文不再对拨打电话、发送信息等语音助手的辅助操作功能进行体验，有了设置提醒任务的体验结果，我们可以相信对于简单的辅助操作功能，语音助手都是可以顺利完成的。此外，语音助手可以在结果的呈现和功能易用上再做提升。</p>
+
+        
+        <div class="ui blue inverted small label">
+            <i class="icon download"></i><a href="./deviceoperation.md">View Source</a>
+        </div>
+        
+    </div>
+</div>
+
+<div class="ui page grid">
+    <div class="column">
+    <!-- disqus -->
+    
+    </div>
+</div>
+
+<div class="ui page grid" id="footer">
+    <div class="column">
+    
+<p>Designed by Limodou, Copyright 2014, Eric</p>
+<p>CSS framework <a href="https://github.com/twitter/bootstrap">Bootstrap</a>, Markdown parser lib <a href="https://github.com/limodou/par">Par</a> and this page is created by <a href="https://github.com/limodou/parm">Parm</a> tool.</p>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="./static/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./static/semantic/javascript/semantic.min.js"></script>
+<script src="./static/asset/prettify.js"></script>
+<script src="./static/toc/toc.js"></script>
+<script src="./static/docs.js"></script>
+<script src="./static/comment.js"></script>
+<script src="./static/jquery.hotkeys.js"></script>
+<script src="./static/jquery.sticky-kit.min.js"></script>
+
+
+
+</body>
+</html>

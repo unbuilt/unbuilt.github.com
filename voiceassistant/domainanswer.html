@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="./static/semantic/css/semantic.min.css"/>
+<link rel="stylesheet" href="./static/docs.css"/>
+<link href="./static/asset/prettify.css" rel="stylesheet">
+<link href="./static/toc/toc.css" rel="stylesheet">
+<link rel="stylesheet" href="./static/parm.css"/>
+<link rel="stylesheet" href="./static/asset/sons-of-obsidian.css"/>
+
+<title>信息查询 - VoiceAssistant</title>
+</head>
+<body>
+
+
+
+<!-- Navbar
+================================================== -->
+<div class="navbar">
+  <div class="ui small secondary inverted borderless menu">
+    
+    <a class="active item" href="./index.html">Home</a>
+    
+  </div>
+</div>
+
+
+<div class="ui divided grid">
+    <div class="four wide column" id="side-bar">
+        <div id="toc" class="content"></div>
+    </div> 
+    
+    <div class="twelve wide column" id="markdown-content">
+    
+        
+
+        
+        <h1 id="title_1">信息查询<a class="anchor" href="#title_1">&para;</a></h1>
+<p>信息查询是语音助手提供的另一主要功能，特别是在某些特定领域：</p>
+<ul>
+<li>天气预报、空气质量</li>
+<li>出行:公交、驾车路线、火车车次、飞机班次、限行、路况</li>
+<li>餐饮</li>
+<li>酒店</li>
+<li>股票</li>
+<li>娱乐：电影、电视、歌曲</li>
+<li>体育</li>
+<li>彩票</li>
+<li>菜谱</li>
+<li>快递</li>
+<li>话费、流量</li>
+<li>违章</li>
+<li>假期安排</li>
+<li>利率、汇率</li>
+</ul>
+<p>本文将以天气、公交、餐饮这些常用领域为例来体验语音助手信息查询的功能，最后用一组足球比赛查询用例来挑战一下语音助手。</p>
+<h2 id="title_1-1">天气预报<a class="anchor" href="#title_1-1">&para;</a></h2>
+<p>天气预报是信息查询中最常用的领域。</p>
+<p>本文采用以下用例来使用语音助手尝试完成查询天气预报的任务。</p>
+<ol>
+<li>今天天气怎么样</li>
+<li>明天下雨吗</li>
+<li>北京的天气怎么样</li>
+<li>天津呢</li>
+</ol>
+<table class="ui collapsing celled table segment">
+<tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>用例四</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
+</tr>
+<tr><td>Siri</td><td>A</td><td>A</td><td>A</td><td>A</td><td>Siri可以支持各种方式天气查询，并可以给出概要信息，和具体天气情况</td><td>A</td><td>A</td>
+</tr>
+<tr><td>灵犀、语点</td><td>A</td><td>A</td><td>A</td><td>D</td><td>灵犀也可以针对问题给出回答，例如“明天不下雨。”</td><td>A</td><td>A</td>
+</tr>
+<tr><td>搜狗语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>搜狗语音助手并不针对问题回答</td><td>A</td><td>A</td>
+</tr>
+<tr><td>百度语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>百度语音助手并不针对问题回答，但是对用例二采用了摘要来回答。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>云知声语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>云知声语音助手并不针对问题回答。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>智能360</td><td>A</td><td>A</td><td>A</td><td>A</td><td>智能360可以理解上下文，对用例四也可以正确回答。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>快说</td><td>A</td><td>A</td><td>A</td><td>D</td><td>快说语音助手并不针对问题回答，也不支持上下文理解。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>哦啦</td><td>A</td><td>A</td><td>A</td><td>A</td><td>哦啦会很好的显示答案，并针对问题进行回答。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>虫洞语音助手</td><td>A</td><td>D 显示今天的天气</td><td>A</td><td>A</td><td>虫洞语音助手可以理解上下文，但对用例二并不能理解。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>出门问问</td><td>A</td><td>A</td><td>A</td><td>D</td><td>出门问问不支持上下文理解。</td><td>A</td><td>B</td>
+</tr>
+
+</table>
+<p>对于最常用的天气查询功能，几乎所有的语音助手都支持得非常好，大部分可以理解上下文，除了显示天气预报外，还可以针对问题进行回答。还有的语音助手在用户查询天气时，除了给出答案，还会提供酒店查询按钮，引导用户。</p>
+<h2 id="title_1-2">公交线路<a class="anchor" href="#title_1-2">&para;</a></h2>
+<p>出行是查公交线路也是主要的移动应用。</p>
+<p>本文采用以下用例来使用语音助手尝试完成查询公交线路的任务。</p>
+<ol>
+<li>到苏州火车站怎么坐车</li>
+<li>我想到苏州火车站</li>
+<li>从创意产业园到苏州火车站怎么走</li>
+</ol>
+<table class="ui collapsing celled table segment">
+<tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>用例四</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
+</tr>
+<tr><td>Siri</td><td>D</td><td>D</td><td>D</td><td>用例四</td><td>Siri无法正确确定目标地点，需要用户选择，但是选择后仍无法给出路线。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>灵犀、语点</td><td>B 直接打开百度地图，驾车路线</td><td>B 同用例一</td><td>D 目标地识别错误，直接打开百度地图，无法给出路线</td><td>D</td><td>灵犀识别出此类问题后，打开百度地图查找路线。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>搜狗语音助手</td><td>A- 直接打开搜狗地图，公交路线非最优</td><td>A- 同用例一</td><td>C 直接打开搜狗地图，需确认起点与终点后，给出驾车路线与时间</td><td>A</td><td>搜狗语音助手识别出此类问题后，打开搜狗地图查找路线，有一些默认参数影响了搜索的路线结果</td><td>A</td><td>A</td>
+</tr>
+<tr><td>百度语音助手</td><td>B 经过多次确认地点，公交路线非最优</td><td>B 同用例一</td><td>A</td><td>A</td><td>百度语音助手对用例三可以直接显示公路线路。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>云知声语音助手</td><td>B 生成百度地图链接，供用户打开，驾车路线</td><td>D 查询从苏州到苏州的火车</td><td>B 生成百度地图链接，供用户打开，驾车路线</td><td>A</td><td>云知声语音助手识别出此类问题后，生成打开百度地图的链接。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>智能360</td><td>D 查询火车</td><td>D 查询火车</td><td>D 无法找到路线，起点定位错误</td><td>A</td><td>智能360理解查询意图为火车查询。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>快说</td><td>D 查询火车</td><td>D 不能识别意图</td><td>B 经过多次确认地点，公交路线非最优</td><td>D</td><td>快说语音助手生成指向不同地图应用的链接，最终结果由所选择的地图应用决定。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>哦啦</td><td>A 直接给出乘车方案</td><td>D 不能识别意图</td><td>B 列出几条线路，然后进入语音输入模式让用户选择进行导航</td><td>A</td><td>哦啦对于能识别出用户意图的问题可以进行很好的交互。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>虫洞语音助手</td><td>B 经过确认终点，公交路线非最优</td><td>B 同用例一</td><td>D 识别出用户意图，无法正确找到起点</td><td>A</td><td>虫洞语音助手对答案显示较好。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>出门问问</td><td>A 给出乘车方案及路线图</td><td>B 给出驾车时间及路线图</td><td>B 给出驾车时间及路线图</td><td>D</td><td>出门问问可以提供出行方案和路线图，并提示进入地图应用的链接。</td><td>A</td><td>A</td>
+</tr>
+
+</table>
+<p>在公交线路查询中，大多数助手都是直接打开地图应用，这样就脱离了语音助手的环境，中断了交互。大多数语音助手的线路查询结果都要比地图应用差，这也是影响用户使用语音助手进行线路查询的原因。</p>
+<p>出门问问给出了乘车方案和路线图，这样可以让用户方便的了解具体的路线信息，而且没有脱离交互环境，在这一组用例上表现最好，确实是为出行而生，也从Google Now上学到了很多。</p>
+<h2 id="title_1-3">餐饮美食<a class="anchor" href="#title_1-3">&para;</a></h2>
+<p>民以食为天，餐饮是另一个主要的查询功能。</p>
+<p>本文采用以下用例来使用语音助手尝试完成查询餐饮的任务。</p>
+<ol>
+<li>附近有什么吃的</li>
+<li>附近有没有必胜客</li>
+<li>观前街有什么美食</li>
+</ol>
+<table class="ui collapsing celled table segment">
+<tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>用例四</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
+</tr>
+<tr><td>Siri</td><td>D</td><td>D</td><td>D</td><td>用例四</td><td>Siri无法正确确定目标地点，需要用户选择，但是选择后仍无法给出路线。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>灵犀、语点</td><td>B 直接打开百度地图，驾车路线</td><td>B 同用例一</td><td>D 目标地识别错误，直接打开百度地图，无法给出路线</td><td>D</td><td>灵犀识别出此类问题后，打开百度地图查找路线。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>搜狗语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>搜狗语音助手</td><td>A</td><td>A</td>
+</tr>
+<tr><td>百度语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>百度语音助手不仅列出餐饮，而且在地图上进行显示。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>云知声语音助手</td><td>A</td><td>D</td><td>D</td><td>A</td><td>云知声语音助手只能显示附近的餐饮。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>智能360</td><td>C</td><td>D</td><td>A</td><td>A</td><td>智能360。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>快说</td><td>A</td><td>C 位置不正确</td><td>B 非餐饮列表</td><td>D</td><td>快说语音助手。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>哦啦</td><td>A</td><td>A</td><td>A</td><td>A</td><td>哦啦可以列出餐饮，并提示可以选择导航。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>虫洞语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>虫洞语音助手对答案显示较好，显示附近的优惠券引导用户，但是没有给出餐饮的距离。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>出门问问</td><td>A</td><td>A</td><td>A</td><td><td>出门问问显示列表及地图，并显示电话、距离等必要信息和导航等相关链接。</td><td>A</td><td>A</td>
+</tr>
+
+</table>
+<p>在餐饮查询中，大多数助手都可以给出餐饮列表，提供电话、距离等信息。一些语音助手还显示出了地图。</p>
+<p>出门问问给出的信息全面、界面清晰、附加功能丰富，体验要好于其他语音助手。</p>
+
+        
+        <div class="ui blue inverted small label">
+            <i class="icon download"></i><a href="./domainanswer.md">View Source</a>
+        </div>
+        
+    </div>
+</div>
+
+<div class="ui page grid">
+    <div class="column">
+    <!-- disqus -->
+    
+    </div>
+</div>
+
+<div class="ui page grid" id="footer">
+    <div class="column">
+    
+<p>Designed by Limodou, Copyright 2014, Eric</p>
+<p>CSS framework <a href="https://github.com/twitter/bootstrap">Bootstrap</a>, Markdown parser lib <a href="https://github.com/limodou/par">Par</a> and this page is created by <a href="https://github.com/limodou/parm">Parm</a> tool.</p>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="./static/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./static/semantic/javascript/semantic.min.js"></script>
+<script src="./static/asset/prettify.js"></script>
+<script src="./static/toc/toc.js"></script>
+<script src="./static/docs.js"></script>
+<script src="./static/comment.js"></script>
+<script src="./static/jquery.hotkeys.js"></script>
+<script src="./static/jquery.sticky-kit.min.js"></script>
+
+
+
+</body>
+</html>
