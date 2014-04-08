@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="./static/semantic/css/semantic.min.css"/>
+<link rel="stylesheet" href="./static/docs.css"/>
+<link href="./static/asset/prettify.css" rel="stylesheet">
+<link href="./static/toc/toc.css" rel="stylesheet">
+<link rel="stylesheet" href="./static/parm.css"/>
+<link rel="stylesheet" href="./static/asset/sons-of-obsidian.css"/>
+
+<title>知识问答 - VoiceAssistant</title>
+</head>
+<body>
+
+
+
+<!-- Navbar
+================================================== -->
+<div class="navbar">
+  <div class="ui small secondary inverted borderless menu">
+    
+    <a class="active item" href="./index.html">Home</a>
+    
+  </div>
+</div>
+
+
+<div class="ui divided grid">
+    <div class="four wide column" id="side-bar">
+        <div id="toc" class="content"></div>
+    </div> 
+    
+    <div class="twelve wide column" id="markdown-content">
+    
+        
+
+        
+        <h1 id="title_1">知识问答<a class="anchor" href="#title_1">&para;</a></h1>
+<p>除特定领域信息查询外，语音助手还可以协助用户获取知识与信息。</p>
+<ul>
+<li>常识性知识</li>
+<li>综合性知识</li>
+<li>实时信息获取</li>
+</ul>
+<h2 id="title_1-1">常识知识<a class="anchor" href="#title_1-1">&para;</a></h2>
+<p>本文采用以下用例来使用语音助手尝试完成查询常识知识的任务。</p>
+<ol>
+<li>红楼梦是谁写的</li>
+<li>五大湖是哪些湖</li>
+<li>姚明的身高是多少</li>
+<li>世界上有多少个国家</li>
+</ol>
+<table class="ui collapsing celled table segment">
+<tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>用例四</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
+</tr>
+<tr><td>Siri</td><td>D</td><td>D</td><td>D</td><td>C 搜索结果包含答案</td><td>Siri不理解此类问题</td><td>B</td><td>D</td>
+</tr>
+<tr><td>灵犀、语点</td><td>A</td><td>D</td><td>A</td><td>A</td><td>对大部分知识问题可以给出答案。但是对问题二直接打开百度地图。打开其他应用，离开助手界面是一个非常糟糕的用户体验。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>搜狗语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>搜狗语音助手非常擅长知识性问答</td><td>A</td><td>A</td>
+</tr>
+<tr><td>百度语音助手</td><td>D</td><td>C 搜索出百科，显示不全，需要点击链接</td><td>A</td><td>D</td><td>百度语音助手并不针对问题回答，用搜索来回答。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>云知声语音助手</td><td>B 百度搜索结果</td><td>D 百度地图到错误地点</td><td>A 百度搜索结果</td><td>B 百度搜索结果</td><td>云知声语音助手依靠百度搜索来回答这些问题。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>智能360</td><td>B</td><td>C 360搜索结果，中国五大湖</td><td>A</td><td>A</td><td>智能360。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>快说</td><td>A</td><td>C 中国五大湖</td><td>D 给出父母身高及介绍</td><td>D</td><td>快说语音助手。</td><td>A</td><td>D</td>
+</tr>
+<tr><td>哦啦</td><td>D</td><td>A</td><td>A</td><td>A</td><td>哦啦对于能够理解的问题会很好的显示答案，并针对问题进行回答。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>虫洞语音助手</td><td>B 百度搜索结果</td><td>C 百度搜索结果，正确答案不是最前的</td><td>A 百度搜索结果</td><td>A 百度搜索结果</td><td>虫洞语音助手依靠百度搜索来回答这些问题。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>出门问问</td><td>B 结果列出搜索结果</td><td>C 搜索结果，需要点击链接查看</td><td>B</td><td>B 搜索结果</td><td>出门问问。</td><td>B</td><td>B</td>
+</tr>
+
+</table>
+<p>各语音助手对知识问答的支持非常明显，Siri根本不支持此类问题。而搜狗能够提供准确的答案，并配有图片及相关信息，因为有知立方支持的原因。</p>
+<h2 id="title_1-2">综合知识及实时信息<a class="anchor" href="#title_1-2">&para;</a></h2>
+<p>综合知识对于语音助手来说是一个难点，对于搜索引擎来说也是个难点。</p>
+<p>本文采用以下用例来使用语音助手尝试完成一些综合查询的任务。</p>
+<ol>
+<li>如何办理护照</li>
+<li>遇到地震怎么办</li>
+<li>哪些学校的建筑专业比较好</li>
+<li>苏州诚品书店什么时候开业</li>
+</ol>
+<table class="ui collapsing celled table segment">
+<tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>用例四</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
+</tr>
+<tr><td>Siri</td><td>D</td><td>C 显示搜索结果摘要</td><td>D 显示附近学校</td><td>D 显示日期</td><td>Siri对此类问题无法理解，搜索结果不佳。</td><td>A</td><td>D</td>
+</tr>
+<tr><td>灵犀、语点</td><td>A</td><td>A</td><td>D 搜索结果不佳</td><td>D 介绍诚品书店</td><td>灵犀信息检索能力一般。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>搜狗语音助手</td><td>A</td><td>A</td><td>D 搜索结果不佳</td><td>B</td><td>搜狗语音助手搜索结果略好。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>百度语音助手</td><td>B 给出搜索结果摘要及连接</td><td>A</td><td>D 搜索结果不佳</td><td>C 显示搜索结果摘要及链接</td><td>百度语音助手。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>云知声语音助手</td><td>C 搜索结果摘要</td><td>D 显示当前位置到地震的路线</td><td>D</td><td>D</td><td>云知声语音助手。</td><td>A</td><td>D</td>
+</tr>
+<tr><td>智能360</td><td>B 给出搜索结果摘要</td><td>C</td><td>B 搜索结果摘要</td><td>C 搜索结果摘要</td><td>智能360使用360搜索，搜索结果好用百度。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>快说</td><td>A</td><td>B</td><td>C</td><td>C</td><td>快说不使用搜索结果，会针对问题进行回答。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>哦啦</td><td>D</td><td>D</td><td>D</td><td>D</td><td>哦啦完且不能理解此类问题，也不会尝试去搜索。</td><td>A</td><td>D</td>
+</tr>
+<tr><td>虫洞语音助手</td><td>B 搜索结果摘要</td><td>C 搜索结果摘要</td><td>B 搜索结果摘要</td><td>B 搜索结果摘要</td><td>虫洞语音助手对答案显示较好。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>出门问问</td><td>D 显示护照图片</td><td>A</td><td>D 显示错误的地图</td><td>D 显示诚品书店地图</td><td>出门问问。</td><td>B</td><td>C</td>
+</tr>
+
+</table>
+<p>在综合性知识查询中，几乎所有的语音助手都是简单的求助于搜索引擎，对问题的回答完全依赖于搜索引擎的结果。快说会针对问题进行回答，较其他助手更能理解用户的问题意图。</p>
+<h2 id="title_1-3">附加功能<a class="anchor" href="#title_1-3">&para;</a></h2>
+<p>语音助手对于日常生活中的方方面面都可以帮助，一般会有很多的附加功能。</p>
+<p>本文采用以下用例来使用语音助手尝试完成日常中用到的任务。</p>
+<ol>
+<li>翻译： 售票处在哪里 （售票处在哪里用英语怎么说）</li>
+<li>（诗歌对答：） 绿蚁新醅酒</li>
+<li>你多大了</li>
+<li>85美元是多少人民币</li>
+</ol>
+<table class="ui collapsing celled table segment">
+<tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>用例四</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
+</tr>
+<tr><td>Siri</td><td>C 搜索结果</td><td>D 识别错误</td><td>A 不能告诉你</td><td>D 搜索结果</td><td>Siri有一些有意思的聊天对话。</td><td>B</td><td>C</td>
+</tr>
+<tr><td>灵犀、语点</td><td>A</td><td>A</td><td>A</td><td>C 显示汇率</td><td>灵犀。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>搜狗语音助手</td><td>C</td><td>C</td><td>A</td><td>A</td><td>搜狗语音助手搜索结果略好。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>百度语音助手</td><td>B</td><td>A</td><td>A</td><td>A</td><td>百度语音助手。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>云知声语音助手</td><td>A</td><td>D</td><td>A</td><td>A</td><td>云知声语音助手。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>智能360</td><td>A</td><td>D</td><td>A</td><td>D 搜索结果</td><td>智能360。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>快说</td><td>D</td><td>B</td><td>A</td><td>D</td><td>快说。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>哦啦</td><td>D</td><td>A</td><td>A</td><td>A</td><td>哦啦。</td><td>A</td><td>B</td>
+</tr>
+<tr><td>虫洞语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>虫洞语音助手。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>出门问问</td><td>A</td><td>D</td><td>A</td><td>A</td><td>出门问问。</td><td>B</td><td>B</td>
+</tr>
+
+</table>
+<p>出门问问果然专注于出门相关的信息，对于汇率、翻译等能较好回答。但是语音识别略差。</p>
+
+        
+        <div class="ui blue inverted small label">
+            <i class="icon download"></i><a href="./questionanswer.md">View Source</a>
+        </div>
+        
+    </div>
+</div>
+
+<div class="ui page grid">
+    <div class="column">
+    <!-- disqus -->
+    
+    </div>
+</div>
+
+<div class="ui page grid" id="footer">
+    <div class="column">
+    
+<p>Designed by Limodou, Copyright 2014, Eric</p>
+<p>CSS framework <a href="https://github.com/twitter/bootstrap">Bootstrap</a>, Markdown parser lib <a href="https://github.com/limodou/par">Par</a> and this page is created by <a href="https://github.com/limodou/parm">Parm</a> tool.</p>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="./static/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./static/semantic/javascript/semantic.min.js"></script>
+<script src="./static/asset/prettify.js"></script>
+<script src="./static/toc/toc.js"></script>
+<script src="./static/docs.js"></script>
+<script src="./static/comment.js"></script>
+<script src="./static/jquery.hotkeys.js"></script>
+<script src="./static/jquery.sticky-kit.min.js"></script>
+
+
+
+</body>
+</html>

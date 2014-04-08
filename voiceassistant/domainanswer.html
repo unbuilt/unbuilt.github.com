@@ -137,17 +137,18 @@
 <li>附近有什么吃的</li>
 <li>附近有没有必胜客</li>
 <li>观前街有什么美食</li>
+<li>附近的川菜馆</li>
 </ol>
 <table class="ui collapsing celled table segment">
 <tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>用例四</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
 </tr>
-<tr><td>Siri</td><td>D</td><td>D</td><td>D</td><td>用例四</td><td>Siri无法正确确定目标地点，需要用户选择，但是选择后仍无法给出路线。</td><td>A</td><td>A</td>
+<tr><td>Siri</td><td>A 精确，简要信息</td><td>A</td><td>D</td><td>A</td><td>可以给出精确，较详细的餐馆信息，但是不能延伸至打折、团购等定餐服务</td><td>A</td><td>A</td>
 </tr>
-<tr><td>灵犀、语点</td><td>B 直接打开百度地图，驾车路线</td><td>B 同用例一</td><td>D 目标地识别错误，直接打开百度地图，无法给出路线</td><td>D</td><td>灵犀识别出此类问题后，打开百度地图查找路线。</td><td>A</td><td>B</td>
+<tr><td>灵犀、语点</td><td>D 不能找到</td><td>D 不能找到</td><td>B 可以找到一些</td><td>D 不能找到</td><td>可以识别出意图，但服务不稳定，提示未能查询到数据，对“观前街”理解为“前街”。</td><td>A</td><td>B</td>
 </tr>
-<tr><td>搜狗语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>搜狗语音助手</td><td>A</td><td>A</td>
+<tr><td>搜狗语音助手</td><td>A 精确，详细</td><td>A</td><td>A</td><td>A</td><td>可以提供精确、详细的信息，并可以直接电话订餐，进一步链接到大众点评的页面。</td><td>A</td><td>A</td>
 </tr>
-<tr><td>百度语音助手</td><td>A</td><td>A</td><td>A</td><td>A</td><td>百度语音助手不仅列出餐饮，而且在地图上进行显示。</td><td>A</td><td>A</td>
+<tr><td>百度语音助手</td><td>A 精确，详细</td><td>A</td><td>D</td><td>B</td><td>百度语音助手不仅列出餐饮，而且在地图上进行显示。</td><td>A</td><td>A</td>
 </tr>
 <tr><td>云知声语音助手</td><td>A</td><td>D</td><td>D</td><td>A</td><td>云知声语音助手只能显示附近的餐饮。</td><td>A</td><td>B</td>
 </tr>
@@ -165,6 +166,41 @@
 </table>
 <p>在餐饮查询中，大多数助手都可以给出餐饮列表，提供电话、距离等信息。一些语音助手还显示出了地图。</p>
 <p>出门问问给出的信息全面、界面清晰、附加功能丰富，体验要好于其他语音助手。</p>
+<h2 id="title_1-4">体育赛事<a class="anchor" href="#title_1-4">&para;</a></h2>
+<p>体育也是一个大家喜闻乐见的主题。</p>
+<p>本文采用以下用例来使用语音助手尝试完成查询体育赛事的任务。</p>
+<ol>
+<li>今天晚上有什么足球赛</li>
+<li>曼联的比赛</li>
+<li>火箭队的比赛结果</li>
+<li>星期天有哪些篮球赛</li>
+</ol>
+<table class="ui collapsing celled table segment">
+<tr><td>应用</td><td>用例一</td><td>用例二</td><td>用例三</td><td>用例四</td><td>任务完成小结</td><td>语音识别</td><td>意图识别</td>
+</tr>
+<tr><td>Siri</td><td>A 提示用户哪个联赛，支持多轮语音交互</td><td>A</td><td>A</td><td>A</td><td>Siri可以很多的给出结果。</td><td>A</td><td>A</td>
+</tr>
+<tr><td>灵犀、语点</td><td>D</td><td>D</td><td>D</td><td>D</td><td>灵犀完全不能理解此类问题。</td><td>A</td><td>D</td>
+</tr>
+<tr><td>搜狗语音助手</td><td>D</td><td>A- 给出最近的赛程</td><td>A- 给出最近比赛结果</td><td>D</td><td>搜狗语音助手可以给出部分答案</td><td>A</td><td>B</td>
+</tr>
+<tr><td>百度语音助手</td><td>D 从网络搜索过时信息</td><td>D 搜索结果，根本不对</td><td>D</td><td>D 搜索结果</td><td>百度语音助手也没有包含此类领域，只是简单搜索</td><td>A</td><td>D</td>
+</tr>
+<tr><td>云知声语音助手</td><td>A</td><td>D 搜索结果 不正确</td><td>D 搜索结果 不正确</td><td>D 搜索结果 不正确</td><td>主要应用百度搜索结果</td><td>A</td><td>C</td>
+</tr>
+<tr><td>智能360</td><td>D 360搜索结果 不正确</td><td>D 介绍曼联</td><td>A 介绍火箭队</td><td>D 360搜索结果 不正确</td><td>智能360。</td><td>A</td><td>D</td>
+</tr>
+<tr><td>快说</td><td>D 百度搜索结果 不正确</td><td>D 过时的信息 不正确</td><td>D 过时的结果 不正确</td><td>D 过时的结果 不正确</td><td>快说语音助手。</td><td>A</td><td>D</td>
+</tr>
+<tr><td>哦啦</td><td>D</td><td>D</td><td>D</td><td>D</td><td>哦啦完全不懂此类问题，也并不去胡乱搜索。</td><td>A</td><td>D</td>
+</tr>
+<tr><td>虫洞语音助手</td><td>D 百度搜索结果 过时 不正确 如果问题改为“今天晚上有什么足球比赛”，将会显示当天的足球比赛信息</td><td>B 显示当天的足球比赛</td><td>C 显示最近NBA比赛结果</td><td>D 百度搜索结果 不正确</td><td>虫洞语音助手试图理解用户的此类问题，但是并不完全明白。</td><td>A</td><td>C</td>
+</tr>
+<tr><td>出门问问</td><td>D 显示附近的足球场地图</td><td>D 搜索结果</td><td>D 搜索结果</td><td>D 显示篮球馆地图</td><td>出门问问异常。</td><td>A</td><td>D</td>
+</tr>
+
+</table>
+<p>在体育赛事查询中，只有少数助手都可以给出正确信息，而这些准实时信息却是用户非常想及时了解的。Siri在此类问题上的准确和完整让人惊讶。</p>
 
         
         <div class="ui blue inverted small label">
